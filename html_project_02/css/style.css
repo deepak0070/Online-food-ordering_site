@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#logo {
+    margin: 2px 29px;
+    cursor: pointer;
+}
+
+
+#logo img {
+    width: 70px;
+    height: 70px;
+    margin: 3px 6px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #ff5252;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3 rem;
+}
+
+#navbar li a {
+    display: block;
+    font-family: 'Assistant', sans-serif;
+    border-radius: 20px;
+    padding: 3px 22px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar li a:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* HOME SECTION STARTS HERE */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    padding: 3px 83px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    background: url(/img/food_3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+}
+
+#home p ,.para-1{
+    color: beige;
+    font-size: 1.5rem;
+    font-family: 'Assistant', sans-serif;
+}
+
+/* SERVICES SECTION */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 55px;
+    border-radius: 23px;
+    background:whitesmoke;
+    margin-bottom: 20px;
+
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 7px;
+}
+
+#services .box .img2 {
+    height: 162px;
+    width: 122px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#services .box p {
+    font-family: 'Assistant', sans-serif;
+}
+
+/* CLIENTS SERVED */
+#client-section {
+    position: relative;
+
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 130px;
+}
+
+#clients .client-img-amazon {
+    height: 78px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: #ffbaba;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/* CONTACT US SECTION */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background-color: #b9e2f5;
+}
+
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: 'Assistant', sans-serif;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Assistant', sans-serif;
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* UTITLITY CLASSES */
+.h-primary {
+    padding: 12px;
+    font-size: 2.9rem;
+    text-align: center;
+}
+
+.first-heading {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.second-heading {
+    font-size: 1.5rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+}
+
+.btn {
+    padding: 2px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: crimson;
+    margin: 17px;
+    border-radius: 13px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration:9ms;
+}
+.btn .btn-anchor{
+    text-decoration: none;
+    color:aliceblue;
+}
+.btn:hover{
+    background-color:white;
+    color:black;
+}
+.btn .btn-anchor:hover{
+    color:black;
+}
+
+
+
+.center {
+    text-align: center;
+   
+}
